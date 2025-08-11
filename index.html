@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>QR Weiterleitung</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  // === EINSTELLUNGEN ===
+  var appLink = "instagram://user?username=borris.fpv"; // App-URL
+  var webLink = "https://instagram.com/borris.fpv";     // Fallback-Web-URL
+
+  // === NICHT ÄNDERN ===
+  setTimeout(function() {
+    window.location.href = webLink;
+  }, 2000);
+  window.location.href = appLink;
+</script>
+
+<style>
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 20%;
+  }
+</style>
+</head>
+<body>
+  <p>Weiterleitung wird gestartet...</p>
+</body>
+</html>
